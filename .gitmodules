@@ -1,0 +1,3 @@
+[submodule ".tmux/themes"]
+	path = .tmux/themes
+	url = git@github.com:edouard-lopez/tmux-config.git
