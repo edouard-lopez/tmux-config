@@ -6,6 +6,8 @@ set-window-option -g xterm-keys on
 
 # Allow mouse interaction
 bind m run "bash $HOME/.tmux/toggle-mouse.sh"
+unbind -T copy-mode-vi MouseDragEnd1Pane  # keep copy mode active after mouse up (see https://github.com/tmux/tmux/issues/140)
+bind -T root MouseDown2Pane run -b "xclip -o | tmux load-buffer - && tmux paste-buffer -s ' '"
 
 # page Up/Down directly and enable copy mode
 bind-key -T root PPage if-shell -F "#{alternate_on}" "send-keys PPage" "copy-mode -e; send-keys PPage"
