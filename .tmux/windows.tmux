@@ -32,9 +32,3 @@ unbind M-6; bind-key -n M-6 select-window -t :6         # Alt+6: swtich to tab 6
 unbind M-7; bind-key -n M-7 select-window -t :7         # Alt+7: swtich to tab 7
 unbind M-8; bind-key -n M-8 select-window -t :8         # Alt+0: swtich to tab 0
 unbind M-9; bind-key -n M-9 select-window -t :9         # Alt+9: swtich to tab 9
-
-# move x clipboard into tmux paste buffer
-bind C-v run "tmux set-buffer \"$(xclip -o -selection clipboard)\"; tmux paste-buffer"
-# move tmux copy buffer into x clipboard
-bind C-c run "tmux show-buffer | xclip -i -selection clipboard"
-
