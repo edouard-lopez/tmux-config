@@ -12,7 +12,7 @@ bind -n M-c kill-pane \; select-layout
 bind -n M-n split-window \; select-layout
 
 # Pane splitting
-unbind %;   bind | split-window -h -c '#{pane_current_path}'    # split vertically
+unbind "%";   bind | split-window -h -c '#{pane_current_path}'    # split vertically
 unbind '"'; bind - split-window -v -c '#{pane_current_path}'    # split horizontally 
 
 # Pane switching with Alt+arrow
