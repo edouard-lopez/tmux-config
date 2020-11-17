@@ -7,18 +7,18 @@ set-option -ga status-style "fg=$FOCUSED_TEXT_COLOR"
 # Status bar left part
 set-option -g status-right-length 10
 set-option -g status-left "#{host}❯"
-set-window-option -g status-left bg="$DEFAULT_BACKGROUND_COLOR"
-set-window-option -g status-left fg="$ACTIVE_TEXT_COLOR"
+set-window-option -g status-left "#[bg=$DEFAULT_BACKGROUND_COLOR]"
+set-window-option -g status-left "#[fg=$ACTIVE_TEXT_COLOR]"
 
 # Window's Tab
 set-window-option -g window-status-format '#{window_index}:#{window_name}'
-set-window-option -g window-status-style fg="$DEFAULT_TEXT_COLOR"
-set-window-option -g window-status-style bg="$DEFAULT_BACKGROUND_COLOR"
+set-window-option -g window-status-style "bg=$DEFAULT_BACKGROUND_COLOR"
+set-window-option -g window-status-style "fg=$DEFAULT_TEXT_COLOR"
 
 # Active Window's Tab
 set-window-option -g window-status-current-format '[#{window_index}:#{window_name}]'
-set-window-option -g window-status-current-style bg="$FOCUSED_BACKGROUND_COLOR"
-set-window-option -g window-status-current-style fg="$FOCUSED_TEXT_COLOR"
+set-window-option -g window-status-current-style "bg=$FOCUSED_BACKGROUND_COLOR"
+set-window-option -g window-status-current-style "fg=$FOCUSED_TEXT_COLOR"
 set-window-option -g window-status-current-style "bold"
 
 # Status bar right part
