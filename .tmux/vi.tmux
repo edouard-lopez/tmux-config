@@ -6,7 +6,7 @@ set-option -g status-keys vi
 set-window-option -g mode-keys vi
 
 # Allow mouse interaction
-bind m run "bash $HOME/.tmux/toggle-mouse.sh"
+bind m run "bash $HOME/.tmux/toggle_mouse.sh"
 set -g mouse on
 bind [ copy-mode  # enable vi copy-mode
 
