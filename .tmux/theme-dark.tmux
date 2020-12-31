@@ -1,8 +1,10 @@
-DEFAULT_BACKGROUND_COLOR="white"
-DEFAULT_TEXT_COLOR="#999999"
-FOCUSED_BACKGROUND_COLOR="#111111"
-FOCUSED_TEXT_COLOR="#eeeeee"
-ACTIVE_BORDER_COLOR="#ff7828"
-ACTIVE_TEXT_COLOR="#ff7828"
-INACTIVE_BACKGROUND_COLOR="#333333"
-INACTIVE_TEXT_COLOR="#555555"
+DEFAULT_BACKGROUND_COLOR="#1F2430" # common.bg
+DEFAULT_TEXT_COLOR="#CBCCC6" # common.fg
+FOCUSED_BACKGROUND_COLOR="#1F2430" # common.bg
+FOCUSED_TEXT_COLOR="#CBCCC6" # common.fg
+ACTIVE_BORDER_COLOR="#101521" # ui.panel.border
+ACTIVE_TEXT_COLOR="#101521" # ui.panel.border
+INACTIVE_BACKGROUND_COLOR="#323A4C" # ui.selection.inactive
+INACTIVE_TEXT_COLOR="#5C6773" # syntax.comment
+# run-shell "source $HOME/dotfiles/includes/fish/themes/ayu-dark.fish; echo"
+run-shell "fish -c 'source $HOME/dotfiles/includes/fish/themes/ayu-mirage.fish'"
