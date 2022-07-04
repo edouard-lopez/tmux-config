@@ -12,11 +12,6 @@ set-option -g base-index 1
 bind-key k confirm kill-window
 bind-key K confirm kill-server
 
-set-window-option -g window-style "bg=$INACTIVE_BACKGROUND_COLOR"
-set-window-option -ga window-style "fg=$INACTIVE_TEXT_COLOR"
-set-window-option -g window-active-style "bg=$FOCUSED_BACKGROUND_COLOR"
-set-window-option -ga window-active-style "fg=$FOCUSED_TEXT_COLOR"
-
 # Firefox-like shortcuts for tabs/windows
 bind-key -n C-t new-window -c '#{pane_current_path}'    # Ctrl+T: new window 
 bind-key -n C-PPage previous-window                     # Ctrl+Page up ⯅

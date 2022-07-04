@@ -22,8 +22,8 @@ bind -n M-Up select-pane -U     # Alt+⯅
 bind -n M-Down select-pane -D   # Alt+⯆
 
 # Default pane style
-set-option -g pane-border-style "bg=$INACTIVE_BACKGROUND_COLOR"
-set-option -ga pane-border-style "fg=$INACTIVE_TEXT_COLOR"
-# Active pane style
-set-option -g pane-active-border-style "bg=$FOCUSED_BACKGROUND_COLOR"
-set-option -ga pane-active-border-style "fg=$ACTIVE_BORDER_COLOR"
+# set-option -g pane-border-style "bg=$INACTIVE_BACKGROUND_COLOR"
+# set-option -ga pane-border-style "fg=$INACTIVE_TEXT_COLOR"
+## Active pane style
+# set-option -g pane-active-border-style "bg=$FOCUSED_BACKGROUND_COLOR"
+# set-option -ga pane-active-border-style "fg=$ACTIVE_BORDER_COLOR"
