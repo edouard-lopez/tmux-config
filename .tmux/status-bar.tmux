@@ -3,7 +3,7 @@ bind-key b set-option status    # Toggle status bar visibility
 
 # Status bar left part
 set-option -g status-right-length 10
-set-option -g status-left "#{host}❯ "
+set-option -g status-left "#{host}❯ "
 
 # Window's Tab
 set-window-option -g window-status-format '#{window_index}:#{window_name}'
