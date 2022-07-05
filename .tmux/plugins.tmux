@@ -3,7 +3,7 @@ set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
 
 # Other examples:
-set -g @plugin 'tmux-plugins/tmux-net-speed'
+set -g @plugin 'xamut/tmux-network-bandwidth'
 set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @plugin 'tmux-plugins/tmux-continuum'
 # set -g @plugin 'tmux-plugins/tmux-yank'
