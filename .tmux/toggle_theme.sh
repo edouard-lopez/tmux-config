@@ -7,9 +7,9 @@ _toggle_theme() {
         TMUX_ACTIVE_THEME="base16-tomorrow"
     fi
 
-    tmux set-environment -u TMUX_ACTIVE_THEME 
+    tmux set-environment -u TMUX_ACTIVE_THEME
     tmux set-environment TMUX_ACTIVE_THEME "$TMUX_ACTIVE_THEME"
-    tmux source $HOME/.tmux/plugins/base16-tmux/colors/"$TMUX_ACTIVE_THEME".tmux
+    tmux source $HOME/.tmux/plugins/base16-tmux/colors/"$TMUX_ACTIVE_THEME".conf
     tmux display "switching theme to: $TMUX_ACTIVE_THEME"
 }
 
