@@ -12,6 +12,9 @@ set-option -g base-index 1
 bind-key k confirm kill-window
 bind-key K confirm kill-server
 
+# Enable mouse scrolling
+set -g mouse on        #For tmux version 2.1 and up
+
 # Firefox-like shortcuts for tabs/windows
 bind-key -n C-t new-window -c '#{pane_current_path}'    # Ctrl+T: new window 
 bind-key -n C-PPage previous-window                     # Ctrl+Page up ⯅
