@@ -1,6 +1,7 @@
 # Set the default terminal mode to 256color mode
 set -g default-terminal "screen-256color"  
 set -as terminal-overrides ',screen-256color:Ms=\E]52;%p1%s;%p2%s\007'
+set -g allow-passthrough on # Enables ANSI pass through: tmux 3.3a fix, see https://github.com/tinted-theming/base16-shell/issues/1
 
 # make ctrl-arrow, etc. work
 set-window-option -g xterm-keys on
