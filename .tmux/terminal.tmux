@@ -1,7 +1,18 @@
 # Set the default terminal mode to 256color mode
-set -g default-terminal "screen-256color"  
-set -as terminal-overrides ',screen-256color:Ms=\E]52;%p1%s;%p2%s\007'
-set -g allow-passthrough on # Enables ANSI pass through: tmux 3.3a fix, see https://github.com/tinted-theming/base16-shell/issues/1
+#set -g default-terminal "screen-256color"  
+#set -as terminal-overrides ',screen-256color:Ms=\E]52;%p1%s;%p2%s\007'
+set-option -g default-terminal "tmux-256color" 
+
+## enable undercurl
+# https://github.com/AstroNvim/AstroNvim/issues/1336#issuecomment-1317609457
+#set -g default-terminal "alacritty"
+#set -as terminal-overrides ',*:Smulx=\E[4::%p1%dm'
+#set -as terminal-overrides ',*:Setulc=\E[58::2::%p1%{65536}%/%d::%p1%{256}%/%{255}%&%d::%p1%{255}%&%d%;m'
+## color correction
+# https://github.com/tmux/tmux/wiki/FAQ#how-do-i-use-rgb-colour
+#set -as terminal-features ",alacritty*:RGB"
+#set -as terminal-overrides ",alacritty*:Tc"
+#set -as terminal-overrides '*:Ss=\E[%p1%d q:Se=\E[ q' # pipe cursor in vim insert mode
 
 # make ctrl-arrow, etc. work
 set-window-option -g xterm-keys on
