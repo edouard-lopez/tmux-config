@@ -1,7 +1,5 @@
 # Set the default terminal mode to 256color mode
-#set -g default-terminal "screen-256color"  
-#set -as terminal-overrides ',screen-256color:Ms=\E]52;%p1%s;%p2%s\007'
-set-option -g default-terminal "tmux-256color" 
+set-option -g default-terminal "tmux-256color" # override tmux-sensible value
 
 ## enable undercurl
 # https://github.com/AstroNvim/AstroNvim/issues/1336#issuecomment-1317609457
