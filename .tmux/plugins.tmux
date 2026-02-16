@@ -9,6 +9,7 @@ set -g @plugin 'tmux-plugins/tmux-continuum'
 # set -g @plugin 'tmux-plugins/tmux-yank'
 set -g @plugin 'tmux-plugins/tmux-battery'
 set -g @plugin 'tmux-plugins/tmux-open'
+set -g @plugin 'noscript/tmux-mighty-scroll' # https://github.com/noscript/tmux-mighty-scroll
 
 set-option -g @continuum-restore 'on'
 set-option -g @continuum-save-interval '8'
@@ -19,3 +20,4 @@ set -g @plugin 'tinted-theming/base16-tmux'
 
 # Install: Hit prefix + I to fetch the plugin and source it.
 run '~/.tmux/plugins/tpm/tpm'
+
