@@ -8,13 +8,10 @@ set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @plugin 'tmux-plugins/tmux-continuum'
 # set -g @plugin 'tmux-plugins/tmux-yank'
 set -g @plugin 'tmux-plugins/tmux-battery'
-set -g @plugin 'tmux-plugins/tmux-open'
-set -g @plugin 'noscript/tmux-mighty-scroll' # https://github.com/noscript/tmux-mighty-scroll
 
 set-option -g @continuum-restore 'on'
 set-option -g @continuum-save-interval '8'
 set-option -g @resurrect-capture-pane-contents 'on'
-# set-option -g @yank_action 'copy-pipe' # or 'copy-pipe-and-cancel' for the default
 
 set -g @plugin 'tinted-theming/base16-tmux'
 

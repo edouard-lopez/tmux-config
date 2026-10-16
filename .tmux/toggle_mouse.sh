@@ -2,16 +2,17 @@
 
 _toggle_mouse() {
   old=$(tmux show -gv mouse)
-  new=""
+  status=""
 
   if [[ "$old" == "on" ]]; then
-    new="off"
+    status="off"
   else
-    new="on"
+    status="on"
   fi
 
-  tmux set-option -g mouse $new \; display "mouse: $new"
-  set -g focus-follows-mouse on
+  tmux set-option -g mouse "$status"
+  message="mouse: $status"
+  tmux display-message "$message"
 }
 
 _toggle_mouse
