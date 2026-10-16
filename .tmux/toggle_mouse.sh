@@ -11,6 +11,7 @@ _toggle_mouse() {
   fi
 
   tmux set-option -g mouse $new \; display "mouse: $new"
+  set -g focus-follows-mouse on
 }
 
 _toggle_mouse
